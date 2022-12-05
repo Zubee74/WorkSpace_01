@@ -10,7 +10,7 @@ test('test', async ({ page }) => {
   await page.getByPlaceholder('Password').fill('admin123');
   await page.getByRole('button', { name: 'Login' }).click();
   await page.getByRole('link', { name: 'Admin' }).click();
-  await page.getByRole('link', { name: 'My Info' }).click();
+  //await page.getByRole('link', { name: 'My Info' }).click();
   await page.getByRole('listitem').filter({ hasText: 'Betty Boop' }).locator('i').click();
   await page.getByRole('menuitem', { name: 'Logout' }).click();
 });
